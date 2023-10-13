@@ -7,7 +7,7 @@ export class UsersController {
         const { name } = req.body
 
         if (name.length < 1) {
-            return res.status(403).json({ mensagem: 'Não é possível criar usuários sem um nome' })
+            return res.status(403).json({ mensagem: 'Não é possível criar usuários sem um nome!' })
         }
 
         database.push(name)
